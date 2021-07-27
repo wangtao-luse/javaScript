@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>对象迭代</title>
+	</head>
+	<body>
+		<script>
+			//https://www.cnblogs.com/yucheng6/p/9650814.html
+			//对象是由键和值结构组成的集合，里面可以存储任意的数据，包括数组和对象等。
+			var stu ={"10":"120","01":"Mike","09":"18"};
+			var globe_jkht_zt={"00":"作废","05":"待同步信息","10":"待审核","11":"待付款","12":"审核不通过","20":"待客户确认","30":"待银行放款","40":"银行已放款","50":"入质完成","60":"完成","70":"正常执行"};
+
+			//访问对象
+			 //console.log(stu.id);
+			// console.log(stu["id"]);
+			//迭代方式
+			 for(k in globe_jkht_zt){			 	
+			 	var key=k;
+			 	var value=globe_jkht_zt[k];
+			 	console.log(key+" -- "+value);
+			 }
+		</script>
+	</body>
+</html>
